@@ -1,34 +1,35 @@
 # 04 Details
 
-## Summary
+## Resumen
 
-This example takes the _03-list_ example as a starting point.
+Este ejemplo toma como punto de partida el ejemplo _03-list_.
 
-We are going to show the detail of a Github user: for them
-we keep the id of the user we chose in the list,
-call the Github API to get its details, and display them in a component.
-display them in a component.
+Vamos a mostrar el detalle de un usuario de Github: para ellos
+nos quedamos con el id del usuario que elegimos en la lista,
+llamamos a la API de Github para obtener sus detalles, y los
+mostramos en un componente.
 
-## Step by Step Guide
+## Paso a Paso
 
-- First we copy the previous example, and do an _npm install_.
+- Primero copiamos el ejemplo anterior, y hacemos un _npm install_
 
 ```bash
 npm install
 ```
 
-- If we want to see what kind of data we are going to handle, we can open the web browser and see what Github's Rest API returns.
+- Si queremos ver qué tipo de datos vamos a manejar, podemos abrir el navegador web y ver que devuelve la API Rest de Github.
 
 ```bash
 https://api.github.com/users/brauliodiez
 ```
 
-EXCERCISE OPTION
-> With what you have done in the previous examples you would be able to set up
-> this page by yourself, I advise you to pause this > exercise and try it out.
-> exercise and try it out.
+**EJERCICIO**
+> Con lo que has hecho en ejemplos anteriores sería capaz de montar
+> esta página tu sólo, te aconsejo que les des a la pause en este
+> ejercicio y lo pruebes.
 
-- We are going to create an interface to have typed to show the details of a member.
+- Vamos a crearnos un interfaz para tener tipada para mostrar
+  los detalles de un miembro.
 
 _./src/detail.tsx_
 
@@ -66,7 +67,7 @@ export const DetailPage: React.FC = () => {
 };
 ```
 
-- Let's do the data loading:
+- Vamos ahora a hacer la carga de datos:
 
 _./src/detail.tsx_
 
@@ -92,7 +93,7 @@ export const DetailPage: React.FC = () => {
 };
 ```
 
-- Let's show the data:
+- Vamos a mostrar los datos:
 
 _./src/detail.tsx_
 
@@ -116,3 +117,13 @@ export const DetailPage: React.FC = () => {
 };
 ```
 
+# ¿Te apuntas a nuestro máster?
+
+Si te ha gustado este ejemplo y tienes ganas de aprender Front End
+guiado por un grupo de profesionales ¿Por qué no te apuntas a
+nuestro [Máster Front End Online Lemoncode](https://lemoncode.net/master-frontend#inicio-banner)? Tenemos tanto edición de convocatoria
+con clases en vivo, como edición continua con mentorización, para
+que puedas ir a tu ritmo y aprender mucho.
+
+Y si tienes ganas de meterte una zambullida en el mundo _devops_
+apúntate nuestro [Bootcamp devops online Lemoncode](https://lemoncode.net/bootcamp-devops#bootcamp-devops/inicio)
